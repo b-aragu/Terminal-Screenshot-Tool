@@ -43,22 +43,22 @@ The Terminal Screenshot Tool is a Python script that allows you to capture and m
 
 ## Usage
 
-- To capture a single screenshot of your active terminal window:
+To use the Screenshot Capture and Processing script, you have two options for specifying the output directory:
 
-    ```shell
-    python terminal.py
+1. **Interactive Setup:**
+   - If you don't provide the `--output-dir` argument, the script will run an interactive setup where you can configure the output directory. Follow the prompts to select the directory or use the default 'screenshots' directory.
+
+   Example:
+   ```bash
+   python main.py
     ```
+2. Direct Directory Specification:
 
-- To capture screenshots periodically at a specified interval (e.g., every 10 seconds):
+If you want to specify the output directory directly, provide the --output-dir argument followed by the directory path. This will skip the interactive setup.
 
-    ```shell
-    python terminal.py --interval 10
-    ```
-
-- To specify an output format (default is PNG):
-
-    ```shell
-    python terminal.py --format JPG
+    Example:
+    ```bash 
+    python main.py --output-dir /path/to/your/directory
     ```
 
 ## Configuration
